@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janus Nexus | Idea Vault MVP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    
+    <div class="nexus-container glass">
+        <header>
+            <div class="badge">JANUS CORE DEMO</div>
+            <h1>Nexus Idea Vault</h1>
+            <p>Conexión activa con Supabase Cloud</p>
+        </header>
+
+        <main>
+            <div class="input-card glass">
+                <input type="text" id="ideaInput" placeholder="Escribe tu siguiente gran idea...">
+                <button id="saveBtn" class="premium-btn">GUARDAR IDEA ✨</button>
+            </div>
+
+            <section class="results">
+                <h3>Últimas Ideas en la Nube</h3>
+                <div id="ideasList" class="ideas-grid">
+                    <p class="loading">Sincronizando con el cerebro...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="status-box">
+                <span id="syncStatus">🟢 Conectado</span>
+            </div>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
